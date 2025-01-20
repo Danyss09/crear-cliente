@@ -48,6 +48,5 @@ def create_customer():
 
 # Iniciar la aplicación
 if __name__ == "__main__":
-app.run(debug=True)
-
+    app.run(debug=True)
 
