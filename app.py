@@ -8,7 +8,7 @@ app = Flask(__name__)
 def connect_to_db():
     try:
         conn = mysql.connector.connect(
-            host="184.73.139.146",
+            host="34.228.146.124",
             database="CustomerCreateDb",
             user="restaurant",  # Cambia esto si usas otro usuario
             password="restaurant123"  # Cambia esto por la contraseña que has configurado
