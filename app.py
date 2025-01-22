@@ -3,7 +3,7 @@ from controllers.customer_controller import customer_bp
 
 app = Flask(__name__)
 
-# Registrar Blueprint
+# Register Blueprint
 app.register_blueprint(customer_bp)
 
 if __name__ == '__main__':
