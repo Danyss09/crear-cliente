@@ -2,6 +2,7 @@ from utils.validation import validate_customer_data
 from flask import Blueprint, request, jsonify
 from models.customer_model import create_customer, get_all_customers
 customer_bp = Blueprint('customer', __name__)
+#  Route to creating a customer
 @customer_bp.route('/create_customer', methods=['POST'])
 def create_customer_route():
     data = request.json
@@ -16,7 +17,7 @@ def create_customer_route():
         data['Address']
     )
     return jsonify(response)
-# Ruta para obtener todos los clientes
+#  Route to get all customers
 @customer_bp.route('/get_customers', methods=['GET'])
 def get_customers_route():
     response = get_all_customers()
