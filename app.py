@@ -8,10 +8,10 @@ app = Flask(__name__)
 def connect_to_db():
     try:
         conn = mysql.connector.connect(
-            host="34.228.146.124",
+            host="localhost",
             database="CustomerCreateDb",
-            user="restaurant",  # Cambia esto si usas otro usuario
-            password="restaurant123"  # Cambia esto por la contraseña que has configurado
+            user="root",  # Cambia esto si usas otro usuario
+            password="dani0919"  # Cambia esto por la contraseña que has configurado
         )
         if conn.is_connected():
             return conn
